@@ -30,12 +30,12 @@
                 <!-- Меню действий -->
                 <ul class="main-header-menu">
                     <li class="main-header-menu__item">
-                        <a href="#" class="main-header-menu__link main-header-menu__bookmarks">
+                        <a href="#" class="main-header-menu__link main-header-menu__bookmarks main-header-menu__bookmarks_active">
                             Закладки: <span class="bookmarks__count">0</span>
                         </a>
                     </li>
                     <li class="main-header-menu__item">
-                        <a href="#" class="main-header-menu__link main-header-menu__basket">
+                        <a href="#" class="main-header-menu__link main-header-menu__basket main-header-menu__basket_active">
                             Корзина: <span class="basket__count">0</span>
                         </a>
                     </li>
@@ -72,11 +72,16 @@
 
                 <!-- Пользовательское меню -->
                 <ul class="user_nav">
-                    <li class="user_nav__item">
+                    <li class="user_nav-user">
+                        <span class="user_nav-user_icon"></span>
+                        <span class="user_nav__name">Равшан Джамшутович</span>
                         <span class="user_nav__login"></span>
-                        Войти
                     </li>
-                    <li class="user_nav__item">Регистрация</li>
+                    <li class="user_nav__item">
+                        <a href="#" class="user_nav__link">Мои заказы</a>
+                        <span class="user_nav__point"></span>
+                        <a href="#" class="user_nav__link">Личный кабинет</a>
+                    </li>
                 </ul>
                 <!-- //Пользовательское меню -->
 
@@ -101,156 +106,135 @@
 
     <!-- Основной контент -->
     <main>
-        <!-- Предложения -->
-        <section class="offers container">
-            <div class="offers__cat offers__cat_new">
-                <h2>Материалы</h2>
-                <a href="">На любой вкус</a>
+        <div class="container">
+            <!-- Хлебные крошки -->
+            <div class="breadcrumbs">
+                <a href="#" class="breadcrumbs__link"></a>
+                <a href="#" class="breadcrumbs__link">Каталог</a>
+                <a href="#" class="breadcrumbs__link">Инструмент</a>
+                <a href="#" class="breadcrumbs__link">Перфораторы</a>
             </div>
-            <div class="offers__cat offers__cat_new">
-                <h2>Инструмент</h2>
-                <a href="">На все случаи</a>
-            </div>
-            <div class="offers__cat offers__cat_new">
-                <h2>Техника</h2>
-                <a href="">Для стройки</a>
-            </div>
+            <!-- //Хлебные крошки -->
 
-            <div class="slider">
-                <div class="slider__slide">
-                    <h2 class="slider__title">Перфораторы</h2>
-                    <span class="slider__desc">Настоящие мужские игрушки</span>
-                    <a href="#" class="slider__link">Открыть каталог</a>
+            <!-- Заголовок раздела -->
+            <h2 class="catalog_header">Перфораторы</h2>
+            <!-- //Заголовок раздела -->
+
+            <!-- Фильтр поиска -->
+            <section class="filter-search">
+                <form action="#" method="POST">
+                    <h2 class="filter-search__header">Фильтр:</h2>
+                    <div class="filter-search-block">
+                        <h3 class="filter-search-block__header">Цена:</h3>
+                        <div class="filter-search-range">
+                            <div class="filter-search-range__scale">
+                                <span class="filter-search-range__toggle"></span>
+                            </div>
+                        </div>
+                        <div class="filter-search-price">
+                            <input type="text" name="price-min" class="filter-search-price__min" value="0">
+                            <span>-</span>
+                            <input type="text" name="price-max" class="filter-search-price__max" value="30000">
+                        </div>
+                        <hr class="filter-search__line">
+                    </div>
+                    <div class="filter-search-block">
+                        <h3 class="filter-search-block__header">Производители:</h3>
+                        <ul class="filter-search-list">
+                            <li class="filter-search-list__item">
+                                <input class="filter-search-list__checkbox" type="checkbox" name="firm-1" id="firm-1" value="Bosh" checked>
+                                <label class="filter-search-list__label" for="firm-1">Bosh</label>
+                            </li>
+                            <li class="filter-search-list__item">
+                                <input class="filter-search-list__checkbox" type="checkbox" name="firm-2" id="firm-2" value="Интерскол">
+                                <label class="filter-search-list__label" for="firm-2">Интерскол</label>
+                            </li>
+                            <li class="filter-search-list__item">
+                                <input class="filter-search-list__checkbox" type="checkbox" name="firm-3" id="firm-3" value="Makita" checked>
+                                <label class="filter-search-list__label" for="firm-3">Makita</label>
+                            </li>
+                            <li class="filter-search-list__item">
+                                <input class="filter-search-list__checkbox" type="checkbox" name="firm-4" id="firm-4" value="Dewalt">
+                                <label class="filter-search-list__label" for="firm-4">Dewalt</label>
+                            </li>
+                            <li class="filter-search-list__item">
+                                <input class="filter-search-list__checkbox" type="checkbox" name="firm-5" id="firm-5" value="Hitachi">
+                                <label class="filter-search-list__label" for="firm-5">Hitachi</label>
+                            </li>
+                        </ul>
+                        <hr class="filter-search__line">
+                    </div>
+                    <div class="filter-search-block">
+                        <h3 class="filter-search-block__header">Питание:</h3>
+                        <ul class="filter-search-list">
+                            <li class="filter-search-list__item">
+                                <input class="filter-search-list__radio" type="radio" name="battery" id="battery-accumulator" value="accumulator" checked>
+                                <label class="filter-search-list__label" for="battery-accumulator">Аккумуляторные</label>
+                            </li>
+                            <li class="filter-search-list__item">
+                                <input class="filter-search-list__radio" type="radio" name="battery" id="battery-lan" value="lan">
+                                <label class="filter-search-list__label" for="battery-lan">Сетевые</label>
+                            </li>
+                        </ul>
+                        <hr class="filter-search__line">
+                    </div>
+                    <button type="submit" class="filter-search__btn">Показать</button>
+                </form>
+            </section>
+            <!-- //Фильтр поиска -->
+
+            <!-- Каталог товаров -->
+            <div class="content-right">
+                <!-- Сортировка -->
+                <div class="sorting">
+                    <span class="sorting__header">Сортировка:</span>
+                    <ul class="sorting-list">
+                        <li class="sorting-list__item"><a href="#" class="sorting-list__link sorting-list__active">По цене</a></li>
+                        <li class="sorting-list__item"><a href="#" class="sorting-list__link">По типу</a></li>
+                        <li class="sorting-list__item"><a href="#" class="sorting-list__link">По функционалу</a></li>
+                        <li class="sorting-list__item"><a href="#" class="sorting-list__link sorting-list__asc sorting-list__active"></a></li>
+                        <li class="sorting-list__item"><a href="#" class="sorting-list__link sorting-list__desc"></a></li>
+                    </ul>
                 </div>
-            </div>
+                <!-- //Сортировка -->
 
-            <div class="offers__cat offers__cat_new">
-                <h2>Скидки 50%</h2>
-                <a href="#">На 350 товаров</a>
-            </div>
-            <div class="offers__cat offers__cat_new">
-                <h2>Доставка</h2>
-                <a href="#">Бесплатно</a>
-            </div>
-        </section>
-        <!-- //Предложения -->
-
-        <!-- Популярные товары -->
-        <section class="popular container">
-            <div class="popular-title">
-                <span class="popular-title__text">Популярные товары:</span>
-                <a href="#" class="popular-title__link">Все популярные товары</a>
-            </div>
-            <ul class="popular-goods">
-                <li class="popular-goods__item">
-                    <div class="popular-goods-actions">
-                        <a href="" class="popular-goods-actions__btn popular-goods-actions__buy">Купить</a>
-                        <a href="" class="popular-goods-actions__btn popular-goods-actions__bookmarks">В закладки</a>
-                    </div>
-                    <img src="http://placehold.it/150x100" alt="Перфоратор BOSCH BFG 9000" class="popular-goods__img">
-                    <h2 class="popular-goods__title">Перфоратор BOSCH BFG 9000</h2>
-                    <span class="popular-goods__oldprice">32500 Р.</span>
-                    <a href="#" class="popular-goods__link">25500 Р.</a>
-                </li>
-            </ul>
-        </section>
-        <!-- //Популярные товары -->
-
-        <!-- Популярные производители -->
-        <section class="popular container">
-            <div class="popular-title">
-                <span class="popular-title__text">Популярные производители:</span>
-                <a href="#" class="popular-title__link">Все производители</a>
-            </div>
-            <ul class="popular-firms">
-                <li class="popular-firms__item">
-                    <img src="http://placehold.it/150x100" alt="BOSH" class="popular-firms__img">
-                </li>
-            </ul>
-        </section>
-        <!-- //Популярные производители -->
-
-        <!-- Услуги -->
-        <section class="services">
-            <div class="container">
-                <h2>Сервисы</h2>
-                <p>
-                    Хороший интернет-магазин отличается от плохого не только ценами!<br/>
-                    Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-                </p>
-                <div class="services-tabs">
-                    <input class="services-toggle" type="radio" id="button-1" name="services-toggle" checked>
-                    <input class="services-toggle" type="radio" id="button-2" name="services-toggle">
-                    <input class="services-toggle" type="radio" id="button-3" name="services-toggle">
-                    <div class="services-tabs">
-                        <label class="services-tab" for="button-1">Доставка</label>
-                        <label class="services-tab" for="button-2">Гарантия</label>
-                        <label class="services-tab" for="button-3">Кредит</label>
-                    </div>
-                    <div class="services-tabs__content services-tabs__delivery">
-                        <span class="services-tabs__title">Доставка</span>
-                        <p class="services-tabs__text">
-                            Мы с удовольствием доставим ваш товар прямо<br/>
-                            к вашему подъезду совершенно бесплатно!<br/>
-                            Ведь мы неплохо заработаем,<br/>
-                            поднимая его на ваш на этаж!
-                        </p>
-                    </div>
-                    <div class="services-tabs__content services-tabs__garantia">
-                        <span class="services-tabs__title">Гарантия</span>
-                        <p class="services-tabs__text">
-                            Если купленный у нас товар поломается или заискрит,<br/>
-                            а также в случае пожара, спровоцированного его вогаранием, вы<br/>
-                            всегда можете быть уверены в нашей гарантии. Мы обменяем<br/>
-                            сгоревший товар на новый.
-                        </p>
-                        <p class="services-tabs__text">
-                            Дом уж восстановите как нибудь сами.
-                        </p>
-                    </div>
-                    <div class="services-tabs__content services-tabs__credit">
-                        <span class="services-tabs__title">Кредит</span>
-                        <p class="services-tabs__text">
-                            Залезть в долговую яму стало проще!<br/>
-                            Кредитные консультанты придут вам на помощь.
-                        </p>
-                        <a href="" class="services-tabs__btn">Отправить заявку</a>
-                    </div>
+                <!-- Список товаров -->
+                <div class="content">
+                    <article class="goods">
+                        <div class="goods-actions">
+                            <a href="" class="goods-actions__btn goods-actions__buy">Купить</a>
+                            <a href="" class="goods-actions__btn goods-actions__bookmarks">В закладки</a>
+                        </div>
+                        <img src="http://placehold.it/150x100" alt="Перфоратор BOSCH BFG 9000" class="goods__img">
+                        <h2 class="goods__title">Перфоратор BOSCH BFG 9000</h2>
+                        <span class="goods__oldprice">32500 Р.</span>
+                        <a href="#" class="goods__link">25500 Р.</a>
+                    </article>
                 </div>
-            </div>
-        </section>
-        <!-- //Услуги -->
+                <!-- //Список товаров -->
 
-        <!-- Информация о компании -->
-        <section class="about">
-            <div class="about-info">
-                <h2>Компания "Техномарт"</h2>
-                <p>
-                    Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br/>
-                    строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
-                </p>
-                <p>
-                    Мы можем доставить ваш товар в самые отдаленные точки России!<br/>
-                    Техномарт работает со многими транспортными компаниями:
-                </p>
-                <ul class="about-info-list">
-                    <li class="about-info-list__item">Деловые линии</li>
-                    <li class="about-info-list__item">Авторейдинг</li>
-                    <li class="about-info-list__item">ЖелДорЭкспедиция</li>
+                <!-- Пагинация -->
+                <ul class="pagination">
+                    <li class="pagination__item"><a class="pagination__link">1</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">Следующая</a></li>
                 </ul>
-                <a href="#" class="about__btn">Подробнее о компании</a>
+                <!-- //Пагинация -->
             </div>
-            <div class="about-contacts">
-                <h2>Контакты</h2>
+            <!-- //Каталог товаров -->
+        </div>
+        <div class="about-goods">
+            <div class="container">
+                <h2 class="about-goods__header">Пара слов о перфораторах</h2>
                 <p>
-                    Вы можете забрать товар сами,<br/>
-                    заехав в наш офис.
+                    Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
                 </p>
-                <div class="about-contacts__map"></div>
-                <a href="#" class="about__btn about-contacts__btn">Заблудились? Напишите нам!</a>
+                <p>
+                    Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+                </p>
             </div>
-        </section>
-        <!-- //Информация о компании -->
+        </div>
     </main>
     <!-- //Основной контент -->
 

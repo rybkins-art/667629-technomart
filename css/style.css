@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/ptsans.woff2") format("woff2"),
+        url("/fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/ptsansbold.woff2") format("woff2"),
+        url("/fonts/ptsansbold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Cuprum";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/cuprum.woff2") format("woff2"),
+        url("/fonts/cuprum.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Cuprum";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/cuprumbold.woff2") format("woff2"),
+        url("/fonts/cuprumbold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Cuprum";
+    font-style: italic;
+    font-weight: 700;
+    src: url("/fonts/cuprumbolditalic.woff2") format("woff2"),
+        url("/fonts/cuprumbolditalic.woff") format("woff");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #fff;
+    font: normal 400 16px/24px "PT Sans","Arial",sans-serif;
+    color: #000;
+}
+input,p,textarea{
+    padding:0;
+    margin:0;
+}
+h1,h2{
+    font-family:"Cuprum","Arial",sans-serif;
+}
+h1,h2,h3{
+    font-weight:700;
+    font-style:normal;
+}
+h1{
+    margin:0;
+    padding:0;
+    font-size:36px;
+    line-height:30px;
+    color:#fff;
+}
+h2,h3{
+    color:#000;
+}
+h2{
+    font-size:30px;
+    line-height:24px;
+}
+h2,h3,ul{
+    margin:0;
+    padding:0;
+}
+h3{
+    font-size:17px;
+    line-height:30px;
+    font-family:"PT Sans","Arial",sans-serif;
+}
+img{
+    max-width:100%;
+    height:auto;
+    border:none;
+}
+ul{
+    list-style:none;
+}
+.clearfix:after{
+    content:'';
+    clear:both;
+    display:table;
+}

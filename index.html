@@ -160,50 +160,57 @@
 
         <!-- Популярные товары -->
         <section class="popular container">
-            <div class="popular-title">
-                <span class="popular-title__text">Популярные товары:</span>
-                <a href="#" class="popular-title__link">Все популярные товары</a>
+            <div class="popular-title flex-betwen-center">
+                <h2 class="popular-title__text">Популярные товары:</h2>
+                <a href="#" class="popular-title__btn">Все популярные товары</a>
             </div>
-            <ul class="popular-goods">
+            <ul class="popular-goods flex-start-start">
                 <li class="popular-goods__item">
                     <div class="popular-goods-actions">
                         <a href="#" class="popular-goods-actions__btn popular-goods-actions__buy">Купить</a>
                         <a href="#" class="popular-goods-actions__btn popular-goods-actions__bookmarks">В закладки</a>
                     </div>
-                    <img src="img/goods/bosh9000.jpg" alt="Перфоратор BOSCH BFG 9000" class="popular-goods__img">
+                    <div class="popular-goods__inner">
+                        <img src="img/goods/bosch9000.jpg" alt="Перфоратор BOSCH BFG 9000" class="popular-goods__img">
+                    </div>
                     <h2 class="popular-goods__title">Перфоратор BOSCH BFG 9000</h2>
                     <span class="popular-goods__oldprice">32500 Р.</span>
-                    <a href="#" class="popular-goods__link">25500 Р.</a>
+                    <a href="#" class="popular-goods__btn">25500 Р.</a>
                 </li>
                 <li class="popular-goods__item">
                     <div class="popular-goods-actions">
                         <a href="#" class="popular-goods-actions__btn popular-goods-actions__buy">Купить</a>
                         <a href="#" class="popular-goods-actions__btn popular-goods-actions__bookmarks">В закладки</a>
                     </div>
-                    <img src="img/goods/bosh3000.jpg" alt="Перфоратор BOSCH BFG 3000" class="popular-goods__img">
+                    <div class="popular-goods__inner">
+                        <img src="img/goods/bosch3000.jpg" alt="Перфоратор BOSCH BFG 3000" class="popular-goods__img">
+                    </div>
                     <h2 class="popular-goods__title">Перфоратор BOSCH BFG 3000</h2>
                     <span class="popular-goods__oldprice">22500 Р.</span>
-                    <a href="#" class="popular-goods__link">15500 Р.</a>
+                    <a href="#" class="popular-goods__btn">15500 Р.</a>
                 </li>
                 <li class="popular-goods__item">
                     <div class="popular-goods-actions">
                         <a href="#" class="popular-goods-actions__btn popular-goods-actions__buy">Купить</a>
                         <a href="#" class="popular-goods-actions__btn popular-goods-actions__bookmarks">В закладки</a>
                     </div>
-                    <img src="img/goods/bosh6000.jpg" alt="Перфоратор BOSCH BFG 6000" class="popular-goods__img">
+                    <div class="popular-goods__inner">
+                        <img src="img/goods/bosch6000.jpg" alt="Перфоратор BOSCH BFG 6000" class="popular-goods__img">
+                    </div>
                     <h2 class="popular-goods__title">Перфоратор BOSCH BFG 6000</h2>
                     <span class="popular-goods__oldprice">30500 Р.</span>
-                    <a href="#" class="popular-goods__link">25500 Р.</a>
+                    <a href="#" class="popular-goods__btn">25500 Р.</a>
                 </li>
                 <li class="popular-goods__item popular-goods__item_new">
                     <div class="popular-goods-actions">
                         <a href="#" class="popular-goods-actions__btn popular-goods-actions__buy">Купить</a>
                         <a href="#" class="popular-goods-actions__btn popular-goods-actions__bookmarks">В закладки</a>
                     </div>
-                    <img src="img/goods/bosh2000.jpg" alt="Перфоратор BOSCH BFG 2000" class="popular-goods__img">
+                    <div class="popular-goods__inner">
+                        <img src="img/goods/bosch2000.jpg" alt="Перфоратор BOSCH BFG 2000" class="popular-goods__img">
+                    </div>
                     <h2 class="popular-goods__title">Перфоратор BOSCH BFG 2000</h2>
-                    <span class="popular-goods__oldprice"></span>
-                    <a href="#" class="popular-goods__link">12500 Р.</a>
+                    <a href="#" class="popular-goods__btn">12500 Р.</a>
                 </li>
             </ul>
         </section>
@@ -211,11 +218,11 @@
 
         <!-- Популярные производители -->
         <section class="popular container">
-            <div class="popular-title">
-                <span class="popular-title__text">Популярные производители:</span>
-                <a href="#" class="popular-title__link">Все производители</a>
+            <div class="popular-title flex-betwen-center">
+                <h2 class="popular-title__text">Популярные производители:</h2>
+                <a href="#" class="popular-title__btn">Все производители</a>
             </div>
-            <ul class="popular-firms">
+            <ul class="popular-firms flex-start-start flex-wrap">
                 <li class="popular-firms__item">
                     <a href="#bosch" class="popular-firms__link">
                         <img src="img/bg/bosch.jpg" alt="BOSH" class="popular-firms__img">
@@ -263,48 +270,50 @@
         <!-- Услуги -->
         <section class="services">
             <div class="container">
-                <h2>Сервисы</h2>
-                <p>
+                <h2 class="section-header">Сервисы</h2>
+                <p class="section-desc">
                     Хороший интернет-магазин отличается от плохого не только ценами!<br/>
                     Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
                 </p>
-                <div class="services-tabs">
-                    <input class="services-toggle" type="radio" id="button-1" name="services-toggle" checked>
-                    <input class="services-toggle" type="radio" id="button-2" name="services-toggle">
-                    <input class="services-toggle" type="radio" id="button-3" name="services-toggle">
+                <div class="services-block flex-start-start">
+                    <input class="services-toggle" type="radio" id="services-btn-1" name="services-toggle" checked>
+                    <input class="services-toggle" type="radio" id="services-btn-2" name="services-toggle">
+                    <input class="services-toggle" type="radio" id="services-btn-3" name="services-toggle">
                     <div class="services-tabs">
-                        <label class="services-tab" for="button-1">Доставка</label>
-                        <label class="services-tab" for="button-2">Гарантия</label>
-                        <label class="services-tab" for="button-3">Кредит</label>
+                        <label class="services-tab" for="services-btn-1">Доставка</label>
+                        <label class="services-tab" for="services-btn-2">Гарантия</label>
+                        <label class="services-tab" for="services-btn-3">Кредит</label>
                     </div>
-                    <div class="services-tabs__content services-tabs__delivery">
-                        <span class="services-tabs__title">Доставка</span>
-                        <p class="services-tabs__text">
-                            Мы с удовольствием доставим ваш товар прямо<br/>
-                            к вашему подъезду совершенно бесплатно!<br/>
-                            Ведь мы неплохо заработаем,<br/>
-                            поднимая его на ваш на этаж!
-                        </p>
-                    </div>
-                    <div class="services-tabs__content services-tabs__garantia">
-                        <span class="services-tabs__title">Гарантия</span>
-                        <p class="services-tabs__text">
-                            Если купленный у нас товар поломается или заискрит,<br/>
-                            а также в случае пожара, спровоцированного его вогаранием, вы<br/>
-                            всегда можете быть уверены в нашей гарантии. Мы обменяем<br/>
-                            сгоревший товар на новый.
-                        </p>
-                        <p class="services-tabs__text">
-                            Дом уж восстановите как нибудь сами.
-                        </p>
-                    </div>
-                    <div class="services-tabs__content services-tabs__credit">
-                        <span class="services-tabs__title">Кредит</span>
-                        <p class="services-tabs__text">
-                            Залезть в долговую яму стало проще!<br/>
-                            Кредитные консультанты придут вам на помощь.
-                        </p>
-                        <a href="" class="services-tabs__btn">Отправить заявку</a>
+                    <div class="services-tabs__content">
+                        <div class="services-tabs__slide services-tabs__delivery">
+                            <span class="services-tabs__title">Доставка</span>
+                            <p class="services-tabs__text">
+                                Мы с удовольствием доставим ваш товар прямо<br/>
+                                к вашему подъезду совершенно бесплатно!<br/>
+                                Ведь мы неплохо заработаем,<br/>
+                                поднимая его на ваш на этаж!
+                            </p>
+                        </div>
+                        <div class="services-tabs__slide services-tabs__guarantee">
+                            <span class="services-tabs__title">Гарантия</span>
+                            <p class="services-tabs__text">
+                                Если купленный у нас товар поломается или заискрит,<br/>
+                                а также в случае пожара, спровоцированного его вогаранием, вы<br/>
+                                всегда можете быть уверены в нашей гарантии. Мы обменяем<br/>
+                                сгоревший товар на новый.
+                            </p>
+                            <p class="services-tabs__text">
+                                Дом уж восстановите как нибудь сами.
+                            </p>
+                        </div>
+                        <div class="services-tabs__slide services-tabs__credit">
+                            <span class="services-tabs__title">Кредит</span>
+                            <p class="services-tabs__text">
+                                Залезть в долговую яму стало проще!<br/>
+                                Кредитные консультанты придут вам на помощь.
+                            </p>
+                            <a href="" class="services-tabs__btn">Отправить заявку</a>
+                        </div>
                     </div>
                 </div>
             </div>

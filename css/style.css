@@ -327,7 +327,7 @@ ul{
 
 .main-header {
     min-height: 320px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     font-style: italic;
     font-family: "Cuprum","Arial",sans-serif;
     font-size: 17px;
@@ -575,9 +575,54 @@ ul{
 .main-nav__link:hover {
     background: #293449;
 }
+
+.breadcrumbs {
+    position: relative;
+    margin-bottom: 17px;
+}
+.breadcrumbs__link {
+    position: relative;
+    display: block;
+    margin-right: 38px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "PT Sans","Arial",sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+.breadcrumbs__link::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -28px;
+    width: 16px;
+    height: 20px;
+    background: url(../img/icons/icon-right-small.svg) no-repeat center;
+}
+.breadcrumbs__home {
+    width: 16px;
+    height: 18px;
+    background: url(../img/icons/icon-home.svg) no-repeat center;
+}
+.catalog_header {
+    margin-bottom: 20px;
+    padding: 30px 28px;
+    background: #f2f6f8;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: "Cuprum","Arial",sans-serif;
+    text-transform: uppercase;
+    color: #32425c;
+}
 .offers {
     line-height: 0;
     font-size: 0;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 .offers-cat {

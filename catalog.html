@@ -13,31 +13,31 @@
     <header class="main-header">
         <!-- Верхняя часть шапки -->
         <div class="main-header-top">
-            <div class="container">
+            <div class="container flex-start-start">
                 <!-- Логотип -->
-                <div class="main-header__logo">
+                <a href="#" class="main-header__logo">
                     Техномарт
-                </div>
+                </a>
                 <!-- //Логотип -->
 
                 <!-- Поиск по сайту -->
                 <div class="search">
                     <form action="#" method="get">
-                        <label for="search" class="search__label"></label>
                         <input type="search" name="search" id="search" class="search__field" placeholder="Поиск:">
+                        <label for="search" class="search__label"></label>
                     </form>
                 </div>
                 <!-- //Поиск по сайту -->
 
                 <!-- Меню действий -->
-                <ul class="main-header-menu">
+                <ul class="main-header-menu flex-start-start">
                     <li class="main-header-menu__item">
-                        <a href="#" class="main-header-menu__link main-header-menu__bookmarks main-header-menu__bookmarks_active">
+                        <a href="#" class="main-header-menu__link main-header-menu__bookmarks">
                             Закладки: <span class="bookmarks__count">0</span>
                         </a>
                     </li>
                     <li class="main-header-menu__item">
-                        <a href="#" class="main-header-menu__link main-header-menu__basket main-header-menu__basket_active">
+                        <a href="#" class="main-header-menu__link main-header-menu__basket">
                             Корзина: <span class="basket__count">0</span>
                         </a>
                     </li>
@@ -51,7 +51,7 @@
 
         <!-- Нижняя часть шапки -->
         <div class="main-header-down">
-            <div class="container">
+            <div class="container flex-start-start flex-wrap">
                 <!-- Описание сайта -->
                 <p class="main-header-title">
                     Интернет-магазин<br/>
@@ -61,35 +61,35 @@
                 <!-- //Описание сайта -->
 
                 <!-- Контактная информация -->
-                <div class="contact_info">
-                    <div class="contact_info__phone">
-                        <span class="phone__icon"></span>
-                        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+                <div class="contact-info">
+                    <div class="contact-info-phone">
+                        <span class="icon phone-icon"></span>
+                        <a href="tel:+78125550555" class="contact-info-phone__link">+7 (812) 555-05-55</a>
                     </div>
-                    <div class="contact_info__address">
+                    <div class="contact-info__address">
                         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     </div>
                 </div>
                 <!-- //Контактная информация -->
 
                 <!-- Пользовательское меню -->
-                <ul class="user_nav">
-                    <li class="user_nav-user">
-                        <span class="user_nav-user_icon"></span>
-                        <span class="user_nav__name">Равшан Джамшутович</span>
-                        <span class="user_nav__login"></span>
+                <ul class="user-nav flex-end-start flex-wrap">
+                    <li class="user-nav__item">
+                        <a href="#" class="user-nav__user user-nav__link">
+                            Равшан Джамшутович
+                        </a>
                     </li>
-                    <li class="user_nav__item">
-                        <a href="#" class="user_nav__link">Мои заказы</a>
-                        <span class="user_nav__point"></span>
-                        <a href="#" class="user_nav__link">Личный кабинет</a>
+                    <li class="user-menu user-nav__item">
+                        <a href="#" class="user-menu__link">Мои заказы</a>
+                        <span class="user-nav__point"></span>
+                        <a href="#" class="user-menu__link">Личный кабинет</a>
                     </li>
                 </ul>
                 <!-- //Пользовательское меню -->
 
                 <!-- Навигация по сайту -->
                 <nav class="main-nav">
-                    <ul class="main-nav__list">
+                    <ul class="main-nav__list flex-center-start">
                         <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
                         <li class="main-nav__item"><a href="#" class="main-nav__link">Компания</a></li>
                         <li class="main-nav__item"><a href="#" class="main-nav__link">Каталог</a></li>
@@ -318,60 +318,59 @@
     <!-- //Основной контент -->
 
     <!-- Подвал сайта -->
-    <footer class="main-footer">
+    <footer class="footer">
         <!-- Верхняя часть футера -->
-        <div class="container clearfix">
-            <div class="left">
+        <div class="container flex-betwen-start">
+            <div class="footer__inner">
                 <a href="#" class="footer__logo">Техномарт</a>
                 <p class="footer__address">
                     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br/>
                     +7 (812) 555-05-55
                 </p>
             </div>
-            <div class="right">
+            <div class="footer__inner">
                 <nav class="footer-nav">
-                    <ul class="footer-nav__list">
-                        <li class="footer-nav__item">Компания</li>
-                        <li class="footer-nav__item">Новости</li>
-                        <li class="footer-nav__item">Каталог</li>
-                        <li class="footer-nav__item">Доставка</li>
-                        <li class="footer-nav__item">Контакты</li>
+                    <ul class="footer-nav__list flex-end-start">
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Компания</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Новости</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Каталог</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Доставка</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <nav class="footer-nav footer-nav-cat">
-                    <ul class="footer-nav__list">
-                        <li class="footer-nav__item">Компания</li>
-                        <li class="footer-nav__item">Новости</li>
-                        <li class="footer-nav__item">Каталог</li>
-                        <li class="footer-nav__item">Доставка</li>
-                        <li class="footer-nav__item">Контакты</li>
+                    <ul class="footer-nav__list flex-end-start">
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Материалы</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Техника</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Инструмент</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Спецпредложения</a></li>
                     </ul>
                 </nav>
-            </div>
-            <div class="footer-down">
-                <p class="footer-copyright">
-                    © 2010-2016 Компания «Техномарт»<br/>
-                    Все права защищены
-                </p>
-                <ul class="footer-social">
-                    <li><a href="" class="footer-social__btn footer-social__vk"></a></li>
-                    <li><a href="" class="footer-social__btn footer-social__fb"></a></li>
-                    <li><a href="" class="footer-social__btn footer-social__inst"></a></li>
-                </ul>
             </div>
         </div>
         <!-- //Верхняя часть футера -->
 
         <!-- Нижняя часть футера -->
         <div class="footer-info">
-            <div class="container clearfix">
-                <div class="left">
-                    <div class="footer-info__title">Обратная связь:</div>
-                    <a href="mail@htmlacademy.ru" class="footer-info__link">mail@htmlacademy.ru</a>
-                </div>
-                <div class="right">
-                    <div class="footer-info__title"> Разработано —</div>
-                    <a href="https://htmlacademy.ru" class="footer-info__link">htmlacademy.ru</a>
+            <div class="container flex-betwen-center">
+                <p class="footer-copyright">
+                    © 2010-2016 Компания «Техномарт»<br/>
+                    Все права защищены
+                </p>
+                <ul class="footer-social flex-betwen-center">
+                    <li><a href="#" class="footer-social__btn footer-social__vk"></a></li>
+                    <li><a href="#" class="footer-social__btn footer-social__fb"></a></li>
+                    <li><a href="#" class="footer-social__btn footer-social__insta"></a></li>
+                </ul>
+                <div class="footer-feed  flex-betwen-center">
+                    <div class="footer__inner">
+                        <div class="footer-feed__title">Обратная связь:</div>
+                        <a href="mail@htmlacademy.ru" class="footer-feed__link">mail@htmlacademy.ru</a>
+                    </div>
+                    <div class="footer__inner">
+                        <div class="footer-feed__title"> Разработано —</div>
+                        <a href="https://htmlacademy.ru" class="footer-feed__link">htmlacademy.ru</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -385,46 +384,48 @@
             <button class="modal__close" type="button"></button>
             <form class="feedback-form" action="#" method="post">
                 <div class="modal-container">
-                    <label>
-                        <span class="feedback-form__title">Ваше имя:</span>
-                        <input class="feedback-form__field" type="text" name="login" placeholder="Представьтесь, пожалуйста">
-                    </label>
-                    <label>
-                        <span class="feedback-form__title">Ваш e-mail:</span>
-                        <input class="feedback-form__field" type="text" name="email" placeholder="Для отправки ответа">
-                    </label>
-                    <span class="feedback-form__title">Текст письма:</span>
+                    <div class="feedback-form__inner flex-betwen-start">
+                        <label class="feedback-form__label">
+                            <span class="feedback-form__title">Ваше имя:</span>
+                            <input class="feedback-form__field" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+                        </label>
+                        <label class="feedback-form__label">
+                            <span class="feedback-form__title">Ваш e-mail:</span>
+                            <input class="feedback-form__field" type="text" name="email" placeholder="Для отправки ответа">
+                        </label>
+                    </div>
+                    <div class="feedback-form__title">Текст письма:</div>
                     <textarea class="feedback-form__textarea" name="textletter" cols="60" rows="6" placeholder="В свободной форме"></textarea>
                 </div>
                 <div class="modal-footer">
                     <div class="modal-container">
-                        <button class="modal-footer__btn modal-footer__btn_a feedback-form__btn" type="submit">Отправить</button>
+                        <button class="modal-footer__btn feedback-form__btn" type="submit">Отправить</button>
                     </div>
                 </div>
             </form>
         </div>
         <!-- //Обратная связь -->
 
-        <!-- Обратная связь -->
+        <!-- Уведомление -->
         <div class="modal modal-alert">
             <button class="modal__close" type="button"></button>
-            <div class="modal-container">
-                <span class="modal-alert__icon modal-alert__success"></span>
+            <div class="modal-container flex-start-center">
+                <span class="modal-alert__icon"></span>
                 <span class="modal-alert__text">Товар добавлен в корзину!</span>
             </div>
             <div class="modal-footer">
-                <div class="modal-container">
+                <div class="modal-container flex-center-center">
                     <a href="#" class="modal-footer__btn modal-footer__btn_a">Оформить заказ</a>
-                    <a href="#" class="modal-footer__btn">Продолжить покупки</a>
+                    <a href="#" class="modal-footer__btn modal-footer__btn_white">Продолжить покупки</a>
                 </div>
             </div>
         </div>
-        <!-- //Обратная связь -->
+        <!-- //Уведомление -->
         
         <!-- Карта -->
-        <div class="modal modal-map">
+        <div class="modal modal-unstyled modal-large">
             <button class="modal__close" type="button"></button>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1520276500505" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1520276500505" width="940" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <!-- //Карта -->
     <!-- Модальные окна -->

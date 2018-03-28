@@ -10,50 +10,53 @@
 </head>
 <body>
     <!-- Шапка сайта -->
-    <header class="main-header">
+    <header class="header">
         <!-- Верхняя часть шапки -->
-        <div class="main-header-top">
+        <div class="header__top">
             <div class="container flex-start-start">
                 <!-- Логотип -->
-                <a href="/" class="main-header__logo">
+                <a class="header__logo">
                     Техномарт
                 </a>
                 <!-- //Логотип -->
 
                 <!-- Поиск по сайту -->
-                <div class="search">
+                <div class="header-search">
                     <form action="#" method="get">
-                        <input type="search" name="search" id="search" class="search__field" placeholder="Поиск:">
-                        <label for="search" class="search__label"></label>
+                        <input type="search" name="search" id="header-search" class="header-search__field" placeholder="Поиск:">
+                        <label for="search" class="header-search__label"></label>
                     </form>
                 </div>
                 <!-- //Поиск по сайту -->
 
                 <!-- Меню действий -->
-                <ul class="main-header-menu flex-start-start">
-                    <li class="main-header-menu__item">
-                        <a href="#" class="main-header-menu__link main-header-menu__bookmarks">
-                            Закладки: <span class="bookmarks__count">0</span>
+                <ul class="header-menu flex-start-start">
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link header-menu__bookmarks">
+                            Закладки: <span>0</span>
                         </a>
                     </li>
-                    <li class="main-header-menu__item">
-                        <a href="#" class="main-header-menu__link main-header-menu__basket main-header-menu__basket_active">
-                            Корзина: <span class="basket__count">10</span>
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link header-menu__link_basket">
+                            Корзина: <span>0</span>
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#" class="header-menu__link to_order">
+                            Оформить заказ
                         </a>
                     </li>
                 </ul>
                 <!-- //Меню действий -->
-
-                <a href="#" class="to_order">Оформить заказ</a>
             </div>
         </div>
         <!-- //Верхняя часть шапки -->
 
         <!-- Нижняя часть шапки -->
-        <div class="main-header-down">
+        <div class="header__down">
             <div class="container flex-start-start flex-wrap">
                 <!-- Описание сайта -->
-                <p class="main-header-title">
+                <p class="header-title">
                     Интернет-магазин<br/>
                     строительных материалов<br/>
                     и инструментов для ремонта
@@ -62,9 +65,11 @@
 
                 <!-- Контактная информация -->
                 <div class="contact-info">
-                    <div class="contact-info-phone">
-                        <span class="icon phone-icon"></span>
-                        <a href="tel:+78125550555" class="contact-info-phone__link">+7 (812) 555-05-55</a>
+                    <div class="contact-info__phone">
+                        <span class="contact-info__phone-icon icon"></span>
+                        <a href="tel:+78125550555" class="contact-info__link">
+                            +7 (812) 555-05-55
+                        </a>
                     </div>
                     <div class="contact-info__address">
                         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -73,30 +78,68 @@
                 <!-- //Контактная информация -->
 
                 <!-- Пользовательское меню -->
-                <ul class="user-nav flex-end-start flex-wrap">
-                    <li class="user-nav__item">
-                        <a href="#" class="user-nav__user user-nav__link">
-                            Равшан Джамшутович
-                        </a>
-                    </li>
-                    <li class="user-menu user-nav__item">
-                        <a href="#" class="user-menu__link">Мои заказы</a>
-                        <span class="user-nav__point"></span>
-                        <a href="#" class="user-menu__link">Личный кабинет</a>
-                    </li>
-                </ul>
+                <div class="user-menu-wrapper">
+                    <ul class="user-menu flex-end-start flex-wrap">
+                        <li class="user-menu__item">
+                            <a href="#" class="user-menu__user user-menu__link">
+                                Равшан Джамшутович
+                            </a>
+                            <a href="#" class="user-menu__logout"></a>
+                        </li>
+                    </ul>
+                    <ul class="user-links">
+                        <li class="user-links__item">
+                            <a href="#" class="user-links__link">
+                                Мои заказы
+                            </a>
+                        </li>
+                        <li class="user-links__item">
+                            <a href="#" class="user-links__link">
+                                Личный кабинет
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <!-- //Пользовательское меню -->
 
                 <!-- Навигация по сайту -->
-                <nav class="main-nav">
-                    <ul class="main-nav__list flex-center-start">
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Компания</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Каталог</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Спецпредложения</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Доставка</a></li>
-                        <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+                <nav class="main-menu">
+                    <ul class="main-menu__list flex-center-start">
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                Компания
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="catalog.html" class="main-menu__link">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                Спецпредложения
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                Доставка
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">
+                                Контакты
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- //Навигация по сайту -->
@@ -119,7 +162,7 @@
             <!-- //Хлебные крошки -->
 
             <!-- Заголовок раздела -->
-            <h2 class="catalog_header">Перфораторы</h2>
+            <h2 class="catalog-header">Перфораторы</h2>
             <!-- //Заголовок раздела -->
 
             <div class="flex-start-start">
@@ -145,23 +188,23 @@
                             <h3 class="filter-search-block__header">Производители:</h3>
                             <ul class="filter-search-list">
                                 <li class="filter-search-list__item">
-                                    <input class="filter-search-list__checkbox" type="checkbox" name="firm-1" id="firm-1" value="Bosh" checked>
+                                    <input class="filter-search-list__checkbox" type="checkbox" name="firm" id="firm-1" value="Bosh" checked>
                                     <label class="filter-search-list__label" for="firm-1">Bosch</label>
                                 </li>
                                 <li class="filter-search-list__item">
-                                    <input class="filter-search-list__checkbox" type="checkbox" name="firm-2" id="firm-2" value="Интерскол">
+                                    <input class="filter-search-list__checkbox" type="checkbox" name="firm" id="firm-2" value="Интерскол">
                                     <label class="filter-search-list__label" for="firm-2">Интерскол</label>
                                 </li>
                                 <li class="filter-search-list__item">
-                                    <input class="filter-search-list__checkbox" type="checkbox" name="firm-3" id="firm-3" value="Makita" checked>
+                                    <input class="filter-search-list__checkbox" type="checkbox" name="firm" id="firm-3" value="Makita" checked>
                                     <label class="filter-search-list__label" for="firm-3">Makita</label>
                                 </li>
                                 <li class="filter-search-list__item">
-                                    <input class="filter-search-list__checkbox" type="checkbox" name="firm-4" id="firm-4" value="Dewalt">
+                                    <input class="filter-search-list__checkbox" type="checkbox" name="firm" id="firm-4" value="Dewalt">
                                     <label class="filter-search-list__label" for="firm-4">Dewalt</label>
                                 </li>
                                 <li class="filter-search-list__item">
-                                    <input class="filter-search-list__checkbox" type="checkbox" name="firm-5" id="firm-5" value="Hitachi">
+                                    <input class="filter-search-list__checkbox" type="checkbox" name="firm" id="firm-5" value="Hitachi">
                                     <label class="filter-search-list__label" for="firm-5">Hitachi</label>
                                 </li>
                             </ul>

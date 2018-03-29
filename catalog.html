@@ -39,16 +39,18 @@
             </symbol>
         </svg>
     <!-- // Блок с иконками -->
+    
+    <!-- Шапка сайта -->
     <header class="header">
         <!-- Верхняя часть шапки -->
         <div class="header__top">
-            <div class="container flex-start-start">
+            <div class="container header__container">
                 <!-- Логотип -->
                 <a class="header__logo">
                     Техномарт
                 </a>
                 <!-- //Логотип -->
-
+    
                 <!-- Поиск по сайту -->
                 <div class="header-search">
                     <form action="#" method="get">
@@ -61,23 +63,25 @@
                     </form>
                 </div>
                 <!-- //Поиск по сайту -->
-
+    
                 <!-- Меню действий -->
-                <ul class="header-menu flex-start-start">
+                <ul class="header-menu">
                     <li class="header-menu__item">
-                        <a href="#" class="header-menu__link header-menu__link_bookmarks">
+                        <a href="#" class="header-menu__link">
                             <svg class="header-menu__icon header-menu__icon_bookmarks" width="20" height="17">
                                 <use xlink:href="#icon-bookmarks"></use>
                             </svg>
-                            Закладки: <span>0</span>
+                            Закладки:
+                            <span>0</span>
                         </a>
                     </li>
                     <li class="header-menu__item">
-                        <a href="#" class="header-menu__link header-menu__link_basket">
+                        <a href="#" class="header-menu__link header-menu__link_active">
                             <svg class="header-menu__icon header-menu__icon_baskter" width="20" height="17">
                                 <use xlink:href="#icon-basket"></use>
                             </svg>
-                            Корзина: <span>0</span>
+                            Корзина:
+                            <span>10</span>
                         </a>
                     </li>
                     <li class="header-menu__item">
@@ -90,18 +94,18 @@
             </div>
         </div>
         <!-- //Верхняя часть шапки -->
-
+    
         <!-- Нижняя часть шапки -->
         <div class="header__down">
-            <div class="container flex-start-start flex-wrap">
+            <div class="container header__container">
                 <!-- Описание сайта -->
                 <p class="header-title">
-                    Интернет-магазин<br/>
-                    строительных материалов<br/>
-                    и инструментов для ремонта
+                    Интернет-магазин
+                    <br/> строительных материалов
+                    <br/> и инструментов для ремонта
                 </p>
                 <!-- //Описание сайта -->
-
+    
                 <!-- Контактная информация -->
                 <div class="contact-info">
                     <div class="contact-info__phone">
@@ -113,7 +117,7 @@
                     </p>
                 </div>
                 <!-- //Контактная информация -->
-
+    
                 <!-- Пользовательское меню -->
                 <div class="user-menu-wrapper">
                     <ul class="user-menu flex-end-start flex-wrap">
@@ -145,10 +149,10 @@
                     </ul>
                 </div>
                 <!-- //Пользовательское меню -->
-
+    
                 <!-- Навигация по сайту -->
                 <nav class="main-menu">
-                    <ul class="main-menu__list flex-center-start">
+                    <ul class="main-menu__list">
                         <li class="main-menu__item">
                             <a href="#" class="main-menu__link">
                                 Главная
@@ -197,7 +201,7 @@
     <main>
         <div class="container">
             <!-- Хлебные крошки -->
-            <ul class="breadcrumbs flex-start-center">
+            <ul class="breadcrumbs">
                 <li class="breadcrumbs__item">
                         <a href="#" class="breadcrumbs__link breadcrumbs__home"></a>
                 </li>
@@ -223,7 +227,7 @@
             <h2 class="catalog-header">Перфораторы</h2>
             <!-- //Заголовок раздела -->
 
-            <div class="flex-start-start">
+            <div class="main-content">
                 <!-- Фильтр поиска -->
                 <section class="filter">
                     <form action="#" method="POST">
@@ -235,7 +239,7 @@
                                     <span class="filter-range__bar"></span>
                                 </div>
                             </div>
-                            <div class="filter-price flex-start-center">
+                            <div class="filter-price">
                                 <input type="text" name="price-min" class="filter-price__val filter-price__min" value="0">
                                 <div class="filter-price__divide">-</div>
                                 <input type="text" name="price-max" class="filter-price__val filter-price__max" value="30000">
@@ -247,37 +251,53 @@
                             <ul class="filter-list">
                                 <li class="filter-list__item">
                                     <input class="filter-list__checkbox" type="checkbox" name="firm" id="firm-1" value="Bosh" checked>
-                                    <label class="filter-list__label" for="firm-1">Bosch</label>
+                                    <label class="filter-list__label" for="firm-1">
+                                        Bosch
+                                    </label>
                                 </li>
                                 <li class="filter-list__item">
                                     <input class="filter-list__checkbox" type="checkbox" name="firm" id="firm-2" value="Интерскол">
-                                    <label class="filter-list__label" for="firm-2">Интерскол</label>
+                                    <label class="filter-list__label" for="firm-2">
+                                        Интерскол
+                                    </label>
                                 </li>
                                 <li class="filter-list__item">
                                     <input class="filter-list__checkbox" type="checkbox" name="firm" id="firm-3" value="Makita" checked>
-                                    <label class="filter-list__label" for="firm-3">Makita</label>
+                                    <label class="filter-list__label" for="firm-3">
+                                        Makita
+                                    </label>
                                 </li>
                                 <li class="filter-list__item">
                                     <input class="filter-list__checkbox" type="checkbox" name="firm" id="firm-4" value="Dewalt">
-                                    <label class="filter-list__label" for="firm-4">Dewalt</label>
+                                    <label class="filter-list__label" for="firm-4">
+                                        Dewalt
+                                    </label>
                                 </li>
                                 <li class="filter-list__item">
                                     <input class="filter-list__checkbox" type="checkbox" name="firm" id="firm-5" value="Hitachi">
-                                    <label class="filter-list__label" for="firm-5">Hitachi</label>
+                                    <label class="filter-list__label" for="firm-5">
+                                        Hitachi
+                                    </label>
                                 </li>
                             </ul>
                         </fieldset>
                         <hr class="filter__hr">
                         <fieldset class="filter-block">    
-                            <legend class="filter-block__title">Питание:</legend>
+                            <legend class="filter-block__title">
+                                Питание:
+                            </legend>
                             <ul class="filter-list">
                                 <li class="filter-list__item">
                                     <input class="filter-list__radio" type="radio" name="battery" id="battery-accumulator" value="accumulator" checked>
-                                    <label class="filter-list__label" for="battery-accumulator">Аккумуляторные</label>
+                                    <label class="filter-list__label" for="battery-accumulator">
+                                        Аккумуляторные
+                                    </label>
                                 </li>
                                 <li class="filter-list__item">
                                     <input class="filter-list__radio" type="radio" name="battery" id="battery-lan" value="lan">
-                                    <label class="filter-list__label" for="battery-lan">Сетевые</label>
+                                    <label class="filter-list__label" for="battery-lan">
+                                        Сетевые
+                                    </label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -289,20 +309,38 @@
                 <!-- Каталог товаров -->
                 <div class="content-right">
                     <!-- Сортировка -->
-                    <div class="sorting flex-start-center">
-                        <span class="sorting__header">Сортировка:</span>
-                        <ul class="sorting-list flex-start-center">
-                            <li class="sorting-list__item"><a href="#" class="sorting-list__link sorting-list__link_active">По цене</a></li>
-                            <li class="sorting-list__item"><a href="#" class="sorting-list__link">По типу</a></li>
-                            <li class="sorting-list__item"><a href="#" class="sorting-list__link">По функционалу</a></li>
-                            <li class="sorting-list__item"><a href="#" class="sorting-list__link sorting-list__link_asc sorting-list__link_active"></a></li>
-                            <li class="sorting-list__item"><a href="#" class="sorting-list__link sorting-list__link_desc"></a></li>
+                    <div class="sorting">
+                        <span class="sorting__header">
+                            Сортировка:
+                        </span>
+                        <ul class="sorting-list">
+                            <li class="sorting-list__item">
+                                <a href="#" class="sorting-list__link sorting-list__link_active">
+                                    По цене
+                                </a>
+                            </li>
+                            <li class="sorting-list__item">
+                                <a href="#" class="sorting-list__link">
+                                    По типу
+                                </a>
+                            </li>
+                            <li class="sorting-list__item">
+                                <a href="#" class="sorting-list__link">
+                                    По функционалу
+                                </a>
+                            </li>
+                            <li class="sorting-list__item">
+                                <a href="#" class="sorting-list__link sorting-list__link_asc sorting-list__link_active"></a>
+                            </li>
+                            <li class="sorting-list__item">
+                                <a href="#" class="sorting-list__link sorting-list__link_desc"></a>
+                            </li>
                         </ul>
                     </div>
                     <!-- //Сортировка -->
 
                     <!-- Список товаров -->
-                    <div class="content flex-start-start flex-wrap">
+                    <div class="content">
                         <article class="product">
                             <div class="product__btns">
                                 <a href="#" class="product__btn product__btn_buy" onclick="addToBasket(event);">
@@ -514,7 +552,7 @@
                     <!-- //Список товаров -->
 
                     <!-- Пагинация -->
-                    <ul class="pagination flex-start-center">
+                    <ul class="pagination">
                         <li class="pagination__item">
                             <a class="pagination__link pagination__active">
                                 1
@@ -560,7 +598,7 @@
     <!-- Подвал сайта -->
     <footer class="footer">
         <!-- Верхняя часть футера -->
-        <div class="container flex-betwen-start">
+        <div class="container footer__container">
             <div class="footer__inner">
                 <a class="footer__logo">
                     Техномарт
@@ -572,7 +610,7 @@
             </div>
             <div class="footer__inner">
                 <nav class="footer-nav">
-                    <ul class="footer-nav__list flex-end-start">
+                    <ul class="footer-nav__list">
                         <li class="footer-nav__item">
                             <a href="#" class="footer-nav__link">
                                 Компания
@@ -601,7 +639,7 @@
                     </ul>
                 </nav>
                 <nav class="footer-nav footer-nav-cat">
-                    <ul class="footer-nav__list flex-end-start">
+                    <ul class="footer-nav__list">
                         <li class="footer-nav__item">
                             <a href="#" class="footer-nav__link">
                                 Материалы
@@ -630,12 +668,12 @@
     
         <!-- Нижняя часть футера -->
         <div class="footer-info">
-            <div class="container flex-betwen-center">
+            <div class="container footer-info__container">
                 <p class="footer-copyright">
                     © 2010-2016 Компания «Техномарт»
                     <br/> Все права защищены
                 </p>
-                <ul class="footer-social flex-betwen-center">
+                <ul class="footer-social">
                     <li>
                         <a href="#" class="footer-social__btn footer-social__vk"></a>
                     </li>
@@ -646,7 +684,7 @@
                         <a href="#" class="footer-social__btn footer-social__insta"></a>
                     </li>
                 </ul>
-                <div class="footer-feed  flex-betwen-center">
+                <div class="footer-feed">
                     <div class="footer__inner">
                         <p class="footer-feed__title">
                             Обратная связь:
@@ -676,7 +714,7 @@
         <button class="modal__close" type="button" data-modal-close></button>
         <form class="feedback-form" action="#" method="post">
             <div class="modal-container">
-                <div class="feedback-form__inner flex-betwen-start">
+                <div class="feedback-form__inner">
                     <label class="feedback-form__label">
                         <span class="feedback-form__title">
                             Ваше имя:
@@ -709,14 +747,14 @@
     <!-- Уведомление -->
     <div class="modal modal-alert" data-modal="basket-modal">
         <button class="modal__close" type="button" data-modal-close></button>
-        <div class="modal-container flex-start-center">
+        <div class="modal-container modal-alert__container">
             <span class="modal-alert__icon"></span>
             <span class="modal-alert__text">
                 Товар добавлен в корзину!
             </span>
         </div>
         <div class="modal-footer">
-            <div class="modal-container flex-center-center">
+            <div class="modal-container modal-alert__footer-container">
                 <a href="#" class="modal-footer__btn modal-footer__btn_a" data-modal-close>
                     Оформить заказ
                 </a>

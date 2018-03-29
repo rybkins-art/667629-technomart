@@ -1072,7 +1072,7 @@ ul {
     margin: 0 auto
 }
 
-.slider-slide {
+.slider__list-item {
     position: absolute;
     padding: 26px 24px;
     top: 0;
@@ -1085,14 +1085,14 @@ ul {
     display: none
 }
 
-.slider-slide__btn,.slider-slide__title {
+.slider__item-link,.slider__item-title {
     font-style: normal;
     font-family: "Cuprum","Arial",sans-serif;
     text-transform: uppercase;
     color: #fff
 }
 
-.slider-slide__title {
+.slider__item-title {
     margin-bottom: 4px;
     background: 0 0;
     font-size: 36px;
@@ -1100,13 +1100,13 @@ ul {
     font-weight: 700
 }
 
-.slider-slide__desc {
+.slider__item-desc {
     font-size: 18px;
     line-height: 22px;
     font-family: "Cuprum","Arial",sans-serif
 }
 
-.slider-slide__btn {
+.slider__item-link {
     display: block;
     width: 166px;
     padding: 10px 15px;
@@ -1120,11 +1120,11 @@ ul {
     border-radius: 3px
 }
 
-.popular-title__btn:hover,.slider-slide__btn:hover {
+.popular-title__btn:hover,.slider__item-link:hover {
     background: #ca2c37
 }
 
-.slider-controls {
+.slider__controls {
     position: absolute;
     z-index: 60;
     bottom: 37px;
@@ -1135,47 +1135,61 @@ ul {
     text-align: center
 }
 
-.slider-controls__btn {
+.slider__controls-item {
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: top;
+}
+.slider__btn {
     display: inline-block;
     width: 6px;
     height: 6px;
-    margin: 0 5px;
-    vertical-align: top;
     background: #fff;
     border: 2px solid #fff;
     border-radius: 50%;
     cursor: pointer
 }
 
-#slider-btn-1:checked~.slider-controls .slider-controls__btn[for=slider-btn-1],#slider-btn-2:checked~.slider-controls .slider-controls__btn[for=slider-btn-2] {
+#slider-btn-1:checked~.slider__controls .slider__btn[for=slider-btn-1],
+#slider-btn-2:checked~.slider__controls .slider__btn[for=slider-btn-2] {
     background: #ee3643
 }
 
-#slider-btn-1:checked~.slider-slides .slider-slide:nth-child(1),#slider-btn-2:checked~.slider-slides .slider-slide:nth-child(2) {
+#slider-btn-1:checked~.slider__list .slider__list-item:nth-child(1),
+#slider-btn-2:checked~.slider__list .slider__list-item:nth-child(2) {
     display: block
 }
 
-.slider-arrow {
+.slider__arrows {
     position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     left: 25px;
+    right: 25px;
     top: 50%;
     margin-top: -20px;
+    z-index: 3;
+}
+.slider__arrows__item {
+    z-index: 2
+}
+.slider__arrow {
+    display: block;
     width: 22px;
     height: 40px;
     cursor: pointer;
     background-position: center;
-    background-repeat: no-repeat;
-    z-index: 2
+    background-repeat: no-repeat
 }
 
-.slider-arrow-left {
+.slider__arrow-left {
     background-image: url(../img/icons/icon-left.svg)
 }
 
-.slider-arrow-right {
-    background-image: url(../img/icons/icon-right.svg);
-    left: auto;
-    right: 25px
+.slider__arrow-right {
+    background-image: url(../img/icons/icon-right.svg)
 }
 
 .popular {
@@ -1496,7 +1510,7 @@ ul {
     display: none
 }
 
-.services-tab {
+.services__tab {
     display: block;
     width: 218px;
     padding: 13px 0 16px 22px;
@@ -1514,7 +1528,9 @@ ul {
     cursor: pointer
 }
 
-#services-btn-1:checked~.services-tabs .services-tab[for=services-btn-1],#services-btn-2:checked~.services-tabs .services-tab[for=services-btn-2],#services-btn-3:checked~.services-tabs .services-tab[for=services-btn-3] {
+#services-btn-1:checked~.services__tab-list .services__tab[for=services-btn-1],
+#services-btn-2:checked~.services__tab-list .services__tab[for=services-btn-2],
+#services-btn-3:checked~.services__tab-list .services__tab[for=services-btn-3] {
     color: #32425c;
     background: #fff;
     border-top: 1px solid #fff;
@@ -1522,37 +1538,38 @@ ul {
     outline: 0
 }
 
-.services-tabs__slide {
+.services__item {
     display: none;
     padding: 0 80px
 }
 
-#services-btn-1:checked~.services-tabs__content .services-tabs__delivery,#services-btn-2:checked~.services-tabs__content .services-tabs__guarantee,#services-btn-3:checked~.services-tabs__content .services-tabs__credit {
+#services-btn-1:checked~.services__list .services__item_delivery,
+#services-btn-2:checked~.services__list .services__item_guarantee,
+#services-btn-3:checked~.services__list .services__item_credit {
     display: block
 }
-
-.services-tabs__title {
+.services__list {
+    flex-grow: 1;
+    position: relative
+}
+.services__item-title {
     margin-bottom: 31px;
     margin-top: 4px;
     display: block;
     text-transform: uppercase;
     color: #32425c;
     font-size: 36px;
+    font-weight: 400;
     font-family: "Cuprum","Arial",sans-serif
 }
 
-.services-tabs__text {
+.services__item-text {
     width: 380px;
     font-size: 13px;
     font-family: "PT Sans","Arial",sans-serif
 }
 
-.services-tabs__content {
-    flex-grow: 1;
-    position: relative
-}
-
-.services-tabs__content::before {
+.services__list::before {
     content: "";
     position: absolute;
     z-index: 70;
@@ -1563,25 +1580,25 @@ ul {
     background: url(../img/shadow.png) no-repeat top center
 }
 
-.services-tabs__slide {
+.services__item {
     height: 215px;
     background-repeat: no-repeat;
     background-position: right top 19px
 }
 
-.services-tabs__delivery {
+.services__item_delivery {
     background-image: url(../img/bg/bg-delivery.png)
 }
 
-.services-tabs__guarantee {
+.services__item_guarantee {
     background-image: url(../img/bg/bg-guarantee.png)
 }
 
-.services-tabs__credit {
+.services__item_credit {
     background-image: url(../img/bg/bg-credit.png)
 }
 
-.services-tabs__btn {
+.services__item-link {
     width: 107px;
     display: block;
     margin-top: 27px;
@@ -1600,7 +1617,7 @@ ul {
     outline: 0
 }
 
-.about__btn:hover,.services-tabs__btn:hover {
+.about__btn:hover,.services__item-link:hover {
     background: #ca2c37
 }
 

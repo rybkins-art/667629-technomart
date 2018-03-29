@@ -203,40 +203,54 @@
                 </a>
             </div>
 
-            <div class="slider">
+            <section class="slider">
                 <input type="radio" id="slider-btn-1" name="toggle" checked>
                 <input type="radio" id="slider-btn-2" name="toggle">
-                <div class="slider-controls">
-                    <label class="slider-controls__btn" for="slider-btn-1"></label>
-                    <label class="slider-controls__btn" for="slider-btn-2"></label>
-                </div>
-                <label class="slider-arrow slider-arrow-left" for="slider-btn-1"></label>
-                <label class="slider-arrow slider-arrow-right" for=slider-btn-2></label>
-                <div class="slider-slides">
-                    <div class="slider-slide" style="background-image: url(img/slider/slide-1.jpg)">
-                        <h2 class="slider-slide__title">
-                            Перфораторы
-                        </h2>
-                        <span class="slider-slide__desc">
-                            Настоящие мужские игрушки
-                        </span>
-                        <a href="#" class="slider-slide__btn">
-                            Открыть каталог
-                        </a>
-                    </div>
-                    <div class="slider-slide" style="background-image: url(img/slider/slide-2.jpg)">
-                        <h2 class="slider-slide__title">
-                            Дрели
-                        </h2>
-                        <span class="slider-slide__desc">
-                            Соседям на радость!
-                        </span>
-                        <a href="#" class="slider-slide__btn">
-                            Открыть каталог
-                        </a>
-                    </div>
-                </div>
-            </div>
+                <ul class="slider__controls">
+                    <li class="slider__controls-item">
+                        <label class="slider__btn" for="slider-btn-1"></label>
+                    </li>
+                    <li class="slider__controls-item">
+                        <label class="slider__btn" for="slider-btn-2"></label>
+                    </li>
+                </ul>
+                <ul class="slider__arrows">
+                    <li class="slider__arrows-item">
+                        <label class="slider__arrow slider__arrow-left" for="slider-btn-1"></label>
+                    </li>
+                    <li class="slider__arrows-item">
+                        <label class="slider__arrow slider__arrow-right" for="slider-btn-2"></label>
+                    </li>
+                </ul>
+                <ul class="slider__list">
+                    <li class="slider__list-item" style="background-image: url(img/slider/slide-1.jpg)">
+                        <article class="slider__item">
+                            <h2 class="slider__item-title">
+                                Перфораторы
+                            </h2>
+                            <span class="slider__item-desc">
+                                Настоящие мужские игрушки
+                            </span>
+                            <a href="#" class="slider__item-link">
+                                Открыть каталог
+                            </a>
+                        </article>
+                    </li>
+                    <li class="slider__list-item" style="background-image: url(img/slider/slide-2.jpg)">
+                        <article class="slider__item">
+                            <h2 class="slider__item-title">
+                                Дрели
+                            </h2>
+                            <span class="slider__item-desc">
+                                Соседям на радость!
+                            </span>
+                            <a href="#" class="slider__item-link">
+                                Открыть каталог
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
 
             <div class="offers-cat">
                 <h2 class="offers-cat__title">
@@ -442,50 +456,66 @@
                     <input class="services-toggle" type="radio" id="services-btn-1" name="services-toggle" checked>
                     <input class="services-toggle" type="radio" id="services-btn-2" name="services-toggle">
                     <input class="services-toggle" type="radio" id="services-btn-3" name="services-toggle">
-                    <div class="services-tabs">
-                        <label class="services-tab" for="services-btn-1">
-                            Доставка
-                        </label>
-                        <label class="services-tab" for="services-btn-2">
-                            Гарантия
-                        </label>
-                        <label class="services-tab" for="services-btn-3">
-                            Кредит
-                        </label>
-                    </div>
-                    <div class="services-tabs__content">
-                        <div class="services-tabs__slide services-tabs__delivery">
-                            <span class="services-tabs__title">
+                    <ul class="services__tab-list">
+                        <li class="services__tab-list-item">
+                            <label class="services__tab" for="services-btn-1">
                                 Доставка
-                            </span>
-                            <p class="services-tabs__text">
-                                Мы с удовольствием доставим ваш товар прямо<br/>
-                                к вашему подъезду совершенно бесплатно!<br/>
-                                Ведь мы неплохо заработаем,<br/>
-                                поднимая его на ваш на этаж!
-                            </p>
-                        </div>
-                        <div class="services-tabs__slide services-tabs__guarantee">
-                            <span class="services-tabs__title">Гарантия</span>
-                            <p class="services-tabs__text">
-                                Если купленный у нас товар поломается или заискрит,<br/>
-                                а также в случае пожара, спровоцированного его вогаранием, вы<br/>
-                                всегда можете быть уверены в нашей гарантии. Мы обменяем<br/>
-                                сгоревший товар на новый.
-                            </p>
-                            <p class="services-tabs__text">
-                                Дом уж восстановите как нибудь сами.
-                            </p>
-                        </div>
-                        <div class="services-tabs__slide services-tabs__credit">
-                            <span class="services-tabs__title">Кредит</span>
-                            <p class="services-tabs__text">
-                                Залезть в долговую яму стало проще!<br/>
-                                Кредитные консультанты придут вам на помощь.
-                            </p>
-                            <a href="" class="services-tabs__btn">Отправить заявку</a>
-                        </div>
-                    </div>
+                            </label>
+                        </li>
+                        <li class="services__tab-list-item">
+                            <label class="services__tab" for="services-btn-2">
+                                Гарантия
+                            </label>
+                        </li>
+                        <li class="services__tab-list-item">
+                            <label class="services__tab" for="services-btn-3">
+                                Кредит
+                            </label>
+                        </li>
+                    </ul>
+                    <ul class="services__list">
+                        <li class="services__list-item">
+                            <article class="services__item services__item_delivery">
+                                <h2 class="services__item-title">
+                                    Доставка
+                                </h2>
+                                <p class="services__item-text">
+                                    Мы с удовольствием доставим ваш товар прямо<br/>
+                                    к вашему подъезду совершенно бесплатно!<br/>
+                                    Ведь мы неплохо заработаем,<br/>
+                                    поднимая его на ваш на этаж!
+                                </p>
+                            </article>
+                        </li>
+                        <li class="services__list-item">
+                            <article class="services__item services__item_guarantee">
+                                <h2 class="services__item-title">
+                                    Гарантия
+                                </h2>
+                                <p class="services__item-text">
+                                    Если купленный у нас товар поломается или заискрит,<br/>
+                                    а также в случае пожара, спровоцированного его вогаранием, вы<br/>
+                                    всегда можете быть уверены в нашей гарантии. Мы обменяем<br/>
+                                    сгоревший товар на новый.
+                                </p>
+                                <p class="services-tabs__text">
+                                    Дом уж восстановите как нибудь сами.
+                                </p>
+                            </article>
+                        </li>
+                        <li class="services__list-item">
+                            <article class="services__item services__item_credit">
+                                <h2 class="services__item-title">
+                                    Кредит
+                                </h2>
+                                <p class="services__item-text">
+                                    Залезть в долговую яму стало проще!<br/>
+                                    Кредитные консультанты придут вам на помощь.
+                                </p>
+                                <a href="" class="services__item-link">Отправить заявку</a>
+                            </article>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>

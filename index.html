@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <title>Техномарт</title>
 </head>
 <body>
@@ -100,7 +101,6 @@
                 <!-- Контактная информация -->
                 <div class="contact-info">
                     <div class="contact-info__phone">
-                        <span class="contact-info__phone-icon icon"></span>
                         <a href="tel:+78125550555" class="contact-info__link">+7 (812) 555-05-55</a>
                     </div>
                     <p class="contact-info__address">
@@ -283,8 +283,8 @@
                     Все популярные товары
                 </a>
             </div>
-            <ul class="products-list">
-                <li class="products-list__item">
+            <ul class="product-list">
+                <li class="product-list__item">
                     <article class="product">
                         <div class="product__btns">
                             <a href="#" class="product__btn product__btn_buy" onclick="addToBasket(event);">
@@ -310,7 +310,7 @@
                         </span>
                     </article>
                 </li>
-                <li class="products-list__item">
+                <li class="product-list__item">
                     <article class="product">
                         <div class="product__btns">
                             <a href="#" class="product__btn product__btn_buy" onclick="addToBasket(event);">
@@ -336,7 +336,7 @@
                         </span>
                     </article>
                 </li>
-                <li class="products-list__item">
+                <li class="product-list__item">
                     <article class="product">
                         <div class="product__btns">
                             <a href="#" class="product__btn product__btn_buy" onclick="addToBasket(event);">
@@ -362,7 +362,7 @@
                         </span>
                     </article>
                 </li>
-                <li class="products-list__item">
+                <li class="product-list__item">
                     <article class="product product_new">
                         <div class="product__btns">
                             <a href="#" class="product__btn product__btn_buy" onclick="addToBasket(event);">
@@ -574,59 +574,56 @@
                 </p>
             </div>
             <div class="footer__inner">
-                <nav class="footer-nav">
-                    <ul class="footer-nav__list">
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">
-                                Компания
-                            </a>
-                        </li>
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">
-                                Новости
-                            </a>
-                        </li>
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">
-                                Каталог
-                            </a>
-                        </li>
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">
-                                Доставка
-                            </a>
-                        </li>
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">
-                                Контакты
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="footer-nav footer-nav-cat">
-                    <ul class="footer-nav__list">
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">
-                                Материалы
-                            </a>
-                        </li>
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">
-                                Техника
-                            </a>
-                        </li>
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">
-                                Инструмент
-                            </a>
-                        </li>
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">
-                                Спецпредложения
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">
+                            Компания
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">
+                            Каталог
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">
+                            Доставка
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link footer-menu__link_yellow">
+                            Материалы
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link footer-menu__link_yellow">
+                            Техника
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link footer-menu__link_yellow">
+                            Инструмент
+                        </a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#" class="footer-menu__link footer-menu__link_yellow">
+                            Спецпредложения
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
         <!-- //Верхняя часть футера -->
@@ -639,9 +636,15 @@
                     Все права защищены
                 </p>
                 <ul class="footer-social">
-                    <li><a href="#" class="footer-social__btn footer-social__vk"></a></li>
-                    <li><a href="#" class="footer-social__btn footer-social__fb"></a></li>
-                    <li><a href="#" class="footer-social__btn footer-social__insta"></a></li>
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link footer-social__vk"></a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link footer-social__fb"></a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#" class="footer-social__link footer-social__insta"></a>
+                    </li>
                 </ul>
                 <div class="footer-feed">
                     <div class="footer__inner">
@@ -728,7 +731,7 @@
         <!-- Карта -->
         <div class="modal modal-unstyled modal-large" data-modal="map">
             <button class="modal__close" type="button" data-modal-close></button>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1520276500505" width="940" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div id="ya-map" class="ya-map"></div>
         </div>
         <!-- //Карта -->
     <!-- Модальные окна -->

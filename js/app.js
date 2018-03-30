@@ -19,13 +19,6 @@ document.ready = (function() {
             });
         });
     }
-
-    let addBasket = document.querySelectorAll('.js-add-basket');
-    if (addBasket) {
-        addBasket.forEach(item => {
-            item.addEventListener('click', addToBasket);
-        });
-    }
 })();
 
 // Закрытия модального окна
@@ -44,6 +37,7 @@ var yandexMap;
 ymaps.ready(init);
 
 function init () {
+    return;
     // Создание экземпляра карты и его привязка к контейнеру с
     // заданным id ("map").
     yandexMap = new ymaps.Map('ya-map', {

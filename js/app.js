@@ -2,45 +2,38 @@
 
 document.ready = (function() {
     // Вешаем обработчик на открытие модального окна
-    let $modalBtn = document.querySelectorAll('[data-modal-target]');
-    if ($modalBtn) {
-        $modalBtn.forEach($this => {
-            $this.addEventListener('click', function(evt) {
+    let modalBtn = document.querySelectorAll('[data-modal-target]');
+    if (modalBtn) {
+        modalBtn.forEach(item => {
+            item.addEventListener('click', function(evt) {
                 if (evt) {
                     evt.preventDefault();
                 }
-                let $modal = document.querySelector(`[data-modal=${$this.dataset.modalTarget}]`);
-                if ($modal) {
-                    $modal.classList.add("modal-visible");
+                let modal = document.querySelector(`[data-modal=${item.dataset.modalTarget}]`);
+                if (modal) {
+                    modal.classList.add("modal-visible");
+                    
+                    // Вешаем обработчик закрытия модального окна
+                    modal.querySelector('[data-modal-close]').addEventListener('click', closeModal);
                 }
             });
         });
     }
 
-    // Вешаем обработчик закрытия модального окна
-    let $modalClose = document.querySelectorAll('[data-modal-close]');
-    if ($modalClose) {
-        $modalClose.forEach($this => {
-            $this.addEventListener('click', function(evt) {
-                if (evt) {
-                    evt.preventDefault();
-                }
-                let $modal = document.querySelector('.modal-visible');
-                if ($modal) {
-                    $modal.classList.remove("modal-visible");
-                }
-            });
+    let addBasket = document.querySelectorAll('.js-add-basket');
+    if (addBasket) {
+        addBasket.forEach(item => {
+            item.addEventListener('click', addToBasket);
         });
     }
 })();
 
-function addToBasket(evt) {
-    if (evt) {
-        evt.preventDefault();
-    }
-    let $modal = document.querySelector('[data-modal=basket-modal]');
-    if ($modal) {
-        $modal.classList.add("modal-visible");
+// Закрытия модального окна
+function closeModal() {
+    let modal = document.querySelector('.modal-visible');
+    if (modal) {
+        modal.classList.remove("modal-visible");
+        this.removeEventListener('click', closeModal);
     }
 }
 

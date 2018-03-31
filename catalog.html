@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,44 +10,47 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <title>Техномарт</title>
 </head>
+
 <body>
     <!-- Блок с иконками -->
     <svg style="display:none">
-            <symbol id="icon-bookmarks" viewBox="0 0 14 16">
-                <path d="M14 15h-1l-5-3H6l-5 3H0V1l1-1h12l1 1v14z"/>
-            </symbol>
-        </svg>
-        <svg style="display:none">
-            <symbol id="icon-basket" viewBox="0 0 15 15">
-                <circle cx="5" cy="14" r="2"/>
-                <circle cx="13" cy="14" r="2"/>
-                <path d="M15 2H4V0H0v2h2l2 9h11V9H9l6-2z"/>
-            </symbol>
-        </svg>
-        <svg style="display:none">
-            <symbol id="icon-search" viewBox="0 0 17 17">
-                    <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
-            </symbol>
-        </svg>
-        <svg style="display:none">
-            <symbol id="icon-login" viewBox="0 0 20 17">
-                <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
-                <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
-            </symbol>
-        </svg>
-        <svg style="display:none">
-            <symbol id="icon-logout" viewBox="0 0 21 17">
-                <path d="M21 9l-9-9v6H6v5h6v6z"/>
-                <path d="M3 14V3l1-1h5V0H4C2 0 1 2 1 3v11c0 1 1 3 3 3h5v-2H4l-1-1z"/>
-            </symbol>
-        </svg>
-        <svg style="display:none">
-            <symbol id="icon-user" viewBox="0 0 20 18">
-                <path d="M18 14l-5-2-1-3 2-4c0-3-2-5-4-5S6 2 6 5l2 4-1 3-5 2c-2 1-2 4-2 4h20s0-3-2-4z"/>
-            </symbol>
-        </svg>
+        <symbol id="icon-bookmarks" viewBox="0 0 14 16">
+            <path d="M14 15h-1l-5-3H6l-5 3H0V1l1-1h12l1 1v14z" />
+        </symbol>
+    </svg>
+    <svg style="display:none">
+        <symbol id="icon-basket" viewBox="0 0 15 15">
+            <circle cx="5" cy="14" r="2" />
+            <circle cx="13" cy="14" r="2" />
+            <path d="M15 2H4V0H0v2h2l2 9h11V9H9l6-2z" />
+        </symbol>
+    </svg>
+    <svg style="display:none">
+        <symbol id="icon-search" viewBox="0 0 17 17">
+            <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"
+            />
+        </symbol>
+    </svg>
+    <svg style="display:none">
+        <symbol id="icon-login" viewBox="0 0 20 17">
+            <path d="M14.875 8.5L6 0v6H0v5h6v6z" />
+            <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"
+            />
+        </symbol>
+    </svg>
+    <svg style="display:none">
+        <symbol id="icon-logout" viewBox="0 0 21 17">
+            <path d="M21 9l-9-9v6H6v5h6v6z" />
+            <path d="M3 14V3l1-1h5V0H4C2 0 1 2 1 3v11c0 1 1 3 3 3h5v-2H4l-1-1z" />
+        </symbol>
+    </svg>
+    <svg style="display:none">
+        <symbol id="icon-user" viewBox="0 0 20 18">
+            <path d="M18 14l-5-2-1-3 2-4c0-3-2-5-4-5S6 2 6 5l2 4-1 3-5 2c-2 1-2 4-2 4h20s0-3-2-4z" />
+        </symbol>
+    </svg>
     <!-- // Блок с иконками -->
-    
+
     <!-- Шапка сайта -->
     <header class="header">
         <!-- Верхняя часть шапки -->
@@ -57,11 +61,11 @@
                     Техномарт
                 </a>
                 <!-- //Логотип -->
-    
+
                 <!-- Поиск по сайту -->
                 <div class="header-search">
                     <form action="#" method="get">
-                        <input type="search" name="search" id="header-search" class="header-search__field" placeholder="Поиск:">
+                        <input id="header-search" class="header-search__field" type="search" name="search" placeholder="Поиск:">
                         <label for="search" class="header-search__label">
                             <svg class="header-search__icon" width="17" height="17">
                                 <use xlink:href="#icon-search"></use>
@@ -70,7 +74,7 @@
                     </form>
                 </div>
                 <!-- //Поиск по сайту -->
-    
+
                 <!-- Меню действий -->
                 <ul class="header-menu">
                     <li class="header-menu__item">
@@ -79,7 +83,9 @@
                                 <use xlink:href="#icon-bookmarks"></use>
                             </svg>
                             Закладки:
-                            <span>0</span>
+                            <span>
+                                0
+                            </span>
                         </a>
                     </li>
                     <li class="header-menu__item">
@@ -88,7 +94,9 @@
                                 <use xlink:href="#icon-basket"></use>
                             </svg>
                             Корзина:
-                            <span>10</span>
+                            <span>
+                                10
+                            </span>
                         </a>
                     </li>
                     <li class="header-menu__item">
@@ -101,7 +109,7 @@
             </div>
         </div>
         <!-- //Верхняя часть шапки -->
-    
+
         <!-- Нижняя часть шапки -->
         <div class="header__down">
             <div class="container header__container">
@@ -112,19 +120,21 @@
                     <br/> и инструментов для ремонта
                 </p>
                 <!-- //Описание сайта -->
-    
+
                 <!-- Контактная информация -->
                 <section class="contact-info">
                     <h2 class="visually-hidden">Контакты</h2>
                     <div class="contact-info__phone">
-                        <a href="tel:+78125550555" class="contact-info__link">+7 (812) 555-05-55</a>
+                        <a href="tel:+78125550555" class="contact-info__link">
+                            +7 (812) 555-05-55
+                        </a>
                     </div>
                     <p class="contact-info__address">
                         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     </p>
                 </section>
                 <!-- //Контактная информация -->
-    
+
                 <!-- Пользовательское меню -->
                 <div class="user-menu-wrapper">
                     <ul class="user-menu flex-end-start flex-wrap">
@@ -156,7 +166,7 @@
                     </ul>
                 </div>
                 <!-- //Пользовательское меню -->
-    
+
                 <!-- Навигация по сайту -->
                 <nav class="main-menu">
                     <ul class="main-menu__list">
@@ -210,7 +220,7 @@
             <!-- Хлебные крошки -->
             <ul class="breadcrumbs">
                 <li class="breadcrumbs__item">
-                        <a href="#" class="breadcrumbs__link breadcrumbs_home"></a>
+                    <a href="#" class="breadcrumbs__link breadcrumbs_home"></a>
                 </li>
                 <li class="breadcrumbs__item">
                     <a href="#" class="breadcrumbs__link">
@@ -254,34 +264,36 @@
                         </fieldset>
                         <hr class="filter__hr">
                         <fieldset class="filter-block">
-                            <legend class="filter-block__title">Производители:</legend>
+                            <legend class="filter-block__title">
+                                Производители:
+                            </legend>
                             <ul class="filter-list">
                                 <li class="filter-list__item">
-                                    <input class="filter-list__checkbox" type="checkbox" name="firm" id="firm-1" value="Bosh" checked>
+                                    <input id="firm-1" class="filter-list__checkbox" type="checkbox" name="firm" value="Bosh" checked>
                                     <label class="filter-list__label" for="firm-1">
                                         Bosch
                                     </label>
                                 </li>
                                 <li class="filter-list__item">
-                                    <input class="filter-list__checkbox" type="checkbox" name="firm" id="firm-2" value="Интерскол">
+                                    <input id="firm-2" class="filter-list__checkbox" type="checkbox" name="firm" value="Интерскол">
                                     <label class="filter-list__label" for="firm-2">
                                         Интерскол
                                     </label>
                                 </li>
                                 <li class="filter-list__item">
-                                    <input class="filter-list__checkbox" type="checkbox" name="firm" id="firm-3" value="Makita" checked>
+                                    <input id="firm-3" class="filter-list__checkbox" type="checkbox" name="firm" value="Makita" checked>
                                     <label class="filter-list__label" for="firm-3">
                                         Makita
                                     </label>
                                 </li>
                                 <li class="filter-list__item">
-                                    <input class="filter-list__checkbox" type="checkbox" name="firm" id="firm-4" value="Dewalt">
+                                    <input id="firm-4" class="filter-list__checkbox" type="checkbox" name="firm" value="Dewalt">
                                     <label class="filter-list__label" for="firm-4">
                                         Dewalt
                                     </label>
                                 </li>
                                 <li class="filter-list__item">
-                                    <input class="filter-list__checkbox" type="checkbox" name="firm" id="firm-5" value="Hitachi">
+                                    <input id="firm-5" class="filter-list__checkbox" type="checkbox" name="firm" value="Hitachi">
                                     <label class="filter-list__label" for="firm-5">
                                         Hitachi
                                     </label>
@@ -289,26 +301,28 @@
                             </ul>
                         </fieldset>
                         <hr class="filter__hr">
-                        <fieldset class="filter-block">    
+                        <fieldset class="filter-block">
                             <legend class="filter-block__title">
                                 Питание:
                             </legend>
                             <ul class="filter-list">
                                 <li class="filter-list__item">
-                                    <input class="filter-list__radio" type="radio" name="battery" id="battery-accumulator" value="accumulator" checked>
+                                    <input id="battery-accumulator" class="filter-list__radio" type="radio" name="battery" value="accumulator" checked>
                                     <label class="filter-list__label" for="battery-accumulator">
                                         Аккумуляторные
                                     </label>
                                 </li>
                                 <li class="filter-list__item">
-                                    <input class="filter-list__radio" type="radio" name="battery" id="battery-lan" value="lan">
+                                    <input id="battery-lan" class="filter-list__radio" type="radio" name="battery" value="lan">
                                     <label class="filter-list__label" for="battery-lan">
                                         Сетевые
                                     </label>
                                 </li>
                             </ul>
                         </fieldset>
-                        <button type="submit" class="filter__btn">Показать</button>
+                        <button type="submit" class="filter__btn">
+                            Показать
+                        </button>
                     </form>
                 </section>
                 <!-- //Фильтр поиска -->
@@ -612,8 +626,11 @@
                     Пара слов о перфораторах
                 </h2>
                 <p>
-                    Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-                    Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+                    Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и
+                    камне.
+                    <br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
+                    дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве
+                    будут совмещены отбойный молоток и ударная дрель.
                 </p>
             </div>
         </div>
@@ -661,7 +678,7 @@
                         </a>
                     </li>
                 </ul>
-                
+
                 <ul class="footer-menu">
                     <li class="footer-menu__item">
                         <a href="#" class="footer-menu__link footer-menu__link_yellow">
@@ -687,7 +704,7 @@
             </div>
         </div>
         <!-- //Верхняя часть футера -->
-    
+
         <!-- Нижняя часть футера -->
         <div class="footer-info">
             <div class="container footer-info__container">
@@ -696,15 +713,23 @@
                     <br/> Все права защищены
                 </p>
                 <ul class="footer-social">
-                    <h2 class="visually-hidden">Мы в социальных сетях</h2>
+                    <h2 class="visually-hidden">
+                        Мы в социальных сетях
+                    </h2>
                     <li class="footer-social__item">
-                        <a href="#" class="footer-social__link footer-social__vk">Вконтакте</a>
+                        <a href="#" class="footer-social__link footer-social__vk">
+                            Вконтакте
+                        </a>
                     </li>
                     <li class="footer-social__item">
-                        <a href="#" class="footer-social__link footer-social__fb">Фейсбук</a>
+                        <a href="#" class="footer-social__link footer-social__fb">
+                            Фейсбук
+                        </a>
                     </li>
                     <li class="footer-social__item">
-                        <a href="#" class="footer-social__link footer-social__insta">Инстаграм</a>
+                        <a href="#" class="footer-social__link footer-social__insta">
+                            Инстаграм
+                        </a>
                     </li>
                 </ul>
                 <div class="footer-feed">
@@ -720,7 +745,7 @@
                         <p class="footer-feed__title">
                             Разработано —
                         </p>
-                        <a href="https://htmlacademy.ru" class="footer-feed__link">
+                        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-feed__link">
                             htmlacademy.ru
                         </a>
                     </div>
@@ -730,13 +755,13 @@
         <!-- //Нижняя часть футера -->
     </footer>
     <!-- //Подвал сайта -->
-    
+
     <!-- Модальные окна -->
     <!-- Обратная связь -->
     <div class="modal" data-modal="feed-modal">
         <button class="modal__close" type="button" data-modal-close></button>
         <form class="feedback-form" action="#" method="post">
-            <div class="modal-container">
+            <div class="modal__container">
                 <div class="feedback-form__inner">
                     <label class="feedback-form__label">
                         <span class="feedback-form__title">
@@ -757,7 +782,7 @@
                 <textarea class="feedback-form__textarea" id="textletter" name="textletter" cols="60" rows="6" placeholder="В свободной форме"></textarea>
             </div>
             <div class="modal-footer">
-                <div class="modal-container">
+                <div class="modal__container">
                     <button class="modal-footer__btn feedback-form__btn" type="submit">
                         Отправить
                     </button>
@@ -766,18 +791,18 @@
         </form>
     </div>
     <!-- //Обратная связь -->
-    
+
     <!-- Уведомление -->
     <div class="modal modal-alert" data-modal="basket-modal">
         <button class="modal__close" type="button" data-modal-close></button>
-        <div class="modal-container modal-alert__container">
+        <div class="modal__container modal-alert__container">
             <span class="modal-alert__icon"></span>
             <span class="modal-alert__text">
                 Товар добавлен в корзину!
             </span>
         </div>
         <div class="modal-footer">
-            <div class="modal-container modal-alert__footer-container">
+            <div class="modal__container modal-alert__footer-container">
                 <a href="#" class="modal-footer__btn modal-footer__btn_a" data-modal-close>
                     Оформить заказ
                 </a>
@@ -788,7 +813,7 @@
         </div>
     </div>
     <!-- //Уведомление -->
-    
+
     <!-- Карта -->
     <div class="modal modal-unstyled modal-large" data-modal="map">
         <button class="modal__close" type="button" data-modal-close></button>
@@ -799,4 +824,5 @@
 
     <script src="js/app.js"></script>
 </body>
+
 </html>

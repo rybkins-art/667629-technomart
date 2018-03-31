@@ -186,7 +186,7 @@ ul {
     transform: rotate(45deg)
 }
 
-.modal-container {
+.modal__container {
     width: 460px;
     margin: 0 auto
 }

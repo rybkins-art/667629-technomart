@@ -52,7 +52,7 @@
                 <!-- Поиск по сайту -->
                 <div class="header-search">
                     <form action="#" method="get">
-                        <input type="search" name="search" id="header-search" class="header-search__field" placeholder="Поиск:">
+                        <input type="search" name="search" id="search" class="header-search__field" placeholder="Поиск:">
                         <label for="search" class="header-search__label">
                             <svg class="header-search__icon" width="17" height="17">
                                 <use xlink:href="#icon-search"></use>
@@ -710,19 +710,19 @@
                         <span class="feedback-form__title">
                             Ваше имя:
                         </span>
-                        <input class="feedback-form__field" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+                        <input class="feedback-form__field" type="text" name="login" placeholder="Представьтесь, пожалуйста" required>
                     </label>
                     <label class="feedback-form__label">
                         <span class="feedback-form__title">
                             Ваш e-mail:
                         </span>
-                        <input class="feedback-form__field" type="text" name="email" placeholder="Для отправки ответа">
+                        <input class="feedback-form__field" type="text" name="email" placeholder="Для отправки ответа" required>
                     </label>
                 </div>
                 <label class="feedback-form__title" for="textletter">
                     Текст письма:
                 </label>
-                <textarea class="feedback-form__textarea" id="textletter" name="textletter" cols="60" rows="6" placeholder="В свободной форме"></textarea>
+                <textarea class="feedback-form__textarea" id="textletter" name="textletter" cols="60" rows="6" placeholder="В свободной форме" required></textarea>
             </div>
             <div class="modal-footer">
                 <div class="modal__container">

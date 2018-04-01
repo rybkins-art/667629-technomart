@@ -37,7 +37,6 @@ var yandexMap;
 ymaps.ready(init);
 
 function init () {
-    return;
     // Создание экземпляра карты и его привязка к контейнеру с
     // заданным id ("map").
     yandexMap = new ymaps.Map('ya-map', {

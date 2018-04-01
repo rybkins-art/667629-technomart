@@ -1857,6 +1857,7 @@ ul {
 }
 
 .footer {
+	overflow: hidden;
 	color: #fff;
 	background: #32425c
 }
@@ -1918,6 +1919,7 @@ ul {
 }
 
 .footer-info {
+	position: relative;
 	margin-top: 29px;
 	background: #293449;
 	padding: 22px 0

@@ -785,6 +785,7 @@ body {
 }
 
 .catalog-header {
+    margin-top: 0;
 	margin-bottom: 20px;
 	padding: 30px 28px;
 	background: #f2f6f8;
@@ -990,7 +991,6 @@ body {
 
 .sorting {
     display: flex;
-    flex-wrap: wrap;
 	align-items: center;
 	margin-bottom: 20px;
 	padding: 7px 20px;
@@ -1000,7 +1000,6 @@ body {
 
 .sorting-list {
     display: flex;
-    flex-wrap: wrap;
 	align-items: center;
     flex-grow: 1;
     margin: 0;
@@ -1019,7 +1018,7 @@ body {
 }
 
 .sorting__header {
-	margin-right: 132px
+	margin-right: 139px
 }
 
 .sorting-list__item {
@@ -1275,6 +1274,8 @@ body {
 }
 
 .slider__controls {
+    margin: 0;
+    padding: 0;
 	position: absolute;
 	z-index: 60;
 	bottom: 37px;
@@ -1314,6 +1315,8 @@ body {
 }
 
 .slider__arrows {
+    margin: 0;
+    padding: 0;
 	position: absolute;
 	box-sizing: border-box;
     display: flex;

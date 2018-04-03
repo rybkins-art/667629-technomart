@@ -705,6 +705,9 @@ body {
 }
 
 .main-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	margin-bottom: 60px;
 	text-align: center;
@@ -714,7 +717,7 @@ body {
 
 .main-menu__list {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
     flex-wrap: wrap;
     margin: 0;
 	padding: 0;

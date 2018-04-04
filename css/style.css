@@ -95,6 +95,7 @@ body {
 .services__desc {
 	margin-top: 27px;
 	margin-bottom: 68px;
+	width: 400px;
 }
 
 .clearfix:after {
@@ -498,7 +499,7 @@ body {
 }
 
 .header-title {
-	width: 247px;
+	width: 210px;
 	margin: 49px 0 40px 52px;
 	font-size: 16px;
 	line-height: 23px;
@@ -970,6 +971,9 @@ body {
 
 .filter-list__label {
 	cursor: pointer
+}
+.filter-list__label:active {
+    outline: none
 }
 
 .filter__btn {
